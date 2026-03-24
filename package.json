@@ -1,0 +1,36 @@
+{
+  "name": "intentionally-broken-web-component",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A minimal web component that intentionally throws an exception",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": true,
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "pnpm clean && pnpm build:ci",
+    "build:ci": "tsup",
+    "dev": "vite",
+    "preview": "vite preview",
+    "clean": "rimraf dist",
+    "tsc": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.5"
+  },
+  "engines": {
+    "node": "22.19.0"
+  },
+  "packageManager": "pnpm@9.12.3"
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intentionally Broken Web Component</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      h1 {
+        color: #d32f2f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Intentionally Broken Web Component Demo</h1>
+    <p>This component will throw an error when instantiated. Check the console for the error message.</p>
+
+    <broken-component></broken-component>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
