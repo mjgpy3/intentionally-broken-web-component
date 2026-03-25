@@ -2,7 +2,7 @@ import * as lit from 'lit';
 import { LitElement } from 'lit';
 
 /**
- * A minimal web component that intentionally throws an exception.
+ * A minimal web component that intentionally breaks.
  * This component is designed to fail for testing error handling.
  *
  * @example
@@ -12,7 +12,6 @@ import { LitElement } from 'lit';
  */
 declare class BrokenComponent extends LitElement {
     static styles: lit.CSSResult;
-    constructor();
     render(): lit.TemplateResult<1>;
 }
 

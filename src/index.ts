@@ -2,7 +2,7 @@ import {LitElement, html, css} from 'lit'
 import {customElement} from 'lit/decorators.js'
 
 /**
- * A minimal web component that intentionally throws an exception.
+ * A minimal web component that intentionally breaks.
  * This component is designed to fail for testing error handling.
  *
  * @example
@@ -19,13 +19,7 @@ export class BrokenComponent extends LitElement {
     }
   `
 
-  constructor() {
-    super()
-    // Intentionally throw an error in the constructor
-    throw new Error('This component is intentionally broken!')
-  }
-
   render() {
-    return html`<p>This should never render</p>`
+    return html`<p>This should render but then break</p>`
   }
 }
